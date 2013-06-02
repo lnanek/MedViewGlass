@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neatocode.medviewglass"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+    
+   	<uses-permission android:name="android.permission.CAMERA"/>
+   	<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <activity
+            android:name="com.neatocode.medviewglass.activity.OverlayActivity"
+            android:label="@string/app_name" 
+            >
+        </activity>
+        <activity
+            android:name="com.neatocode.medviewglass.activity.RunTestActivity"
+            android:label="@string/app_name" 
+            >
+        </activity>
+        <activity
+            android:name="com.neatocode.medviewglass.activity.OverlayCameraActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.neatocode.medviewglass.activity.IVChecklistActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.neatocode.medviewglass.activity.FluChecklistActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.neatocode.medviewglass.activity.EnhancementActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape"
+            >
+        </activity>
+        <activity
+            android:name="com.neatocode.medviewglass.activity.CheckoutActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.neatocode.medviewglass.activity.ScreenSlideActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+
+
+</manifest>
